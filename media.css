@@ -1,0 +1,102 @@
+@media (max-width: 450px ){
+    .nav-bar{
+        top:100%;
+        width: 100%;
+        backdrop-filter: blur(250px);
+        left:0;
+        position: absolute;
+        align-items: center;
+        justify-content: center;
+        margin-right: 3.35rem;
+        overflow: hidden;
+        height: 0;
+        transition: .3s ease;
+    }
+    .nav-bar a{
+        display: block;
+        text-align: center;
+        margin: 2rem;
+        
+    }
+    
+    .icons{
+        font-size: 1.8rem;
+        padding-right: 0;
+        right: 0;
+        justify-content: right;
+        margin-right: 5%;
+    }
+    #menu-open{
+        display: block;
+        /* padding-right: -10%; */
+    }
+    .logo{
+        padding-left:0 ;
+        font-size: 1.5rem;
+    }
+    #check:checked~.icons #menu-open{
+        display: none;
+    }
+    #check:checked~.icons #menu-close{
+        display: inline-block;
+    } 
+    #check:checked~.nav-bar{
+        height: 16.5rem;
+    } 
+    body{
+        background-image: url(images/fule-1.jpg);
+    }
+    .container{
+        margin: 3.5rem 1rem;
+    }
+}
+@media (max-width: 710px ){
+    body{
+        background-image: url(images/fire.jpg);
+    }
+    
+    .nav-bar{
+        top:100%;
+        width: 100%;
+        backdrop-filter: blur(50px);
+        left:0;
+        position: absolute;
+        align-items: center;
+        justify-content: center;
+        margin-right: 3.35rem;
+        overflow: hidden;
+        height: 0;
+        transition: .3s ease;
+    }
+    .nav-bar a{
+        display: block;
+        text-align: center;
+        margin: 2rem;
+
+    }
+    .icons{
+        font-size: 2rem;
+        padding-right: 0;
+        right: 0;
+        justify-content: right;
+    }
+    #menu-open{
+        display: block;
+    }
+    .logo{
+        padding-left:0 ;
+        font-size: 1.8rem;
+    }
+    #check:checked~.icons #menu-open{
+        display: none;
+    }
+    #check:checked~.icons #menu-close{
+        display: inline-block;
+    } 
+    #check:checked~.nav-bar{
+        height: 16.5rem;
+    } 
+    #menu-close{
+        margin-top: 18%;
+    }
+}
